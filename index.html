@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">  
+    <title>About Me Page</title>
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h3 class="page">Landing Page</h3>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="media/videos/tropical.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <img src="media/images/me.JPEG">
+            <h4>Shiela Daguio</h4>
+            <p><i>"Code is like humor. When you have to explain it, it’s bad".</i> – Cory House. At first, I was intimidated because I didn't understand all these words and numbers, but then I learned some coding and now I can create my own page. I would like to show you some of what I've learned through this page with HTML and CSS.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <!-- <ul class="social">
+            <li><a href="https://www.facebook.com/shiela.daguio04" target="_blank"><img src="media/images/fb_logo.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/shiela-daguio-892a60264/" target="_blank"><img src="media/images/linked_in.png"></a></li>
+        </ul> -->
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const container = document.querySelector('.container')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            container.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
